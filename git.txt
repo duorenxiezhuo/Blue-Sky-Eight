@@ -1,0 +1,47 @@
+第一阶段
+git init 管理当前初始文件
+git status 监测当前文件里的子文件情况（是否有改动，是否被GIT管理）（红色代表 新增或修改文件）
+git add 文件名管理某个文件  或者 .管理全部软件 （绿色 代表已经管理）
+git commit -m'版本名字'
+git log 查询版本
+
+第二阶段
+git commit -m'新增项目版本名字'
+出现事件 需要删除新增项目
+git reflog 查询现有版本（提取版本序号）
+git reset --hard（粘贴提取的版本序号） 回滚至某个版本
+
+番外篇
+git checkout +改动的文件名（红色变原始）工作区间内变化
+
+第三阶段(创建分支)
+git branch                      查看分支  
+git branch +某分支名      创建某分支
+git branch -d+某分支名   删除某分支
+git checkout                   切换主分支 
+git checkout+分支名       切换某分支  
+git merge    合并分支（需要转到主干再合并分支）             
+
+第四阶段（githud）
+添加远程连接 git remote add origin +地址
+推送代码     git push origin 分支
+下载代码     git clone 地址
+拉取更新的代码 git pull origin 分支（git fetch origin分支/git merge origin分支 ）
+
+第五阶段（变基）
+rebase -i+合并版本号 完成变基
+
+第六阶段（版本号简洁显示）
+git log --graph --pre
+
+第七阶段（多人协同）
+
+
+
+
+
+
+
+
+
+
